@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Navigation Bar</title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    function toggleSidebar() {
+      const sidebar = document.getElementById("sidebarRight");
+      if (sidebar.style.width === "250px") {
+        sidebar.style.width = "0";
+      } else {
+        sidebar.style.width = "250px";
+      }
+    }
+    
+    function closeSidebar() {
+      document.getElementById("sidebarRight").style.width = "0";
+    }
+    </script>
+    
+</head>
+<body>
+  <div class="logo-and-title">
+    <div class="logo">
+        <img src="logo.jpg" alt="Logo"> </div>
+    <span class="site-title">Lesperance school</span>
+</div>
+<nav class="navbar">
+        <ul class="nav-links">
+          <li><a href="home.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      
+        <div class="search-sidebar-container">
+          <input type="text" placeholder="Search...">
+          <button>🔍</button>
+          <div class="sidebar-icon" onclick="toggleSidebar()">☰</div>
+        </div>
+      </nav>
+      
+      <!-- Right Sidebar -->
+      <div class="sidebar-right" id="sidebarRight">
+        <button class="close-btn" onclick="closeSidebar()">×</button>
+        <a href="sport.html">Sport</a>
+        <a href="science.html">Science</a>
+        <a href="art.html">Art</a>
+      </div>
+      <main>
+
+        <!-- HERO SECTION -->
+        <section class="hero">
+          <div class="hero-left">
+            <h2 class="hero-heading">
+              Make student, teacher, parent and principal<br/>communicate easily
+            </h2>
+            <a class="cta" href="#">SIGN IN FOR MORE</a>
+          </div>
+    
+          <div class="hero-right">
+            <div class="hero-img-frame" aria-hidden="true">
+              <div class="glow"></div>
+              <img src="graduation.jpg" alt="Graduation group" />
+            </div>
+          </div>
+        </section>
+    
+        <!-- CURLY DIVIDER -->
+        <div class="curly-divider" aria-hidden="true">
+          <svg viewBox="0 0 1200 80" preserveAspectRatio="none" class="curly-svg">
+            <path d="M0 40 C150 0, 350 80, 600 40 C850 0,1050 80,1200 40" 
+                  fill="none" stroke="#0b1a14" stroke-width="6" stroke-linecap="round"/>
+          </svg>
+        </div>
+    <!-- ACTIVITIES SECTION -->
+<section class="activities">
+  <div class="activity">
+    <a href="art.html">
+    <img src="art.jpg" alt="Art & Exhibition">
+    <h3>Art & Exhibition</h3>
+    </a>
+  </div>
+
+  <div class="activity">
+    <a href="sport.html">
+    <img src="sport.jpg" alt="Sport">
+    <h3>Sport</h3>
+    </a>
+  </div>
+
+  <div class="activity">
+    <a href="science.html">
+    <img src="science.jpg" alt="Science and Creativity">
+    <h3>Science & Creativity</h3>
+    </a>
+  </div>
+</section>
+
+    
+        <!-- ROLES SECTION -->
+        <section class="roles">
+          <div class="role">
+            <img src="student.jpg" alt="Student">
+            <h4>I’m student</h4>
+            <a class="small-cta" href="login.html">SIGN IN</a>
+          </div>
+    
+          <div class="role">
+            <img src="teacher.jpg" alt="Teacher">
+            <h4>I’m teacher</h4>
+            <a class="small-cta" href="log in teacher.html">SIGN IN</a>
+          </div>
+    
+          <div class="role">
+            <img src="principal.jpg" alt="Principal">
+            <h4>I’m principle</h4>
+            <a class="small-cta" href="log in principal.html">SIGN IN</a>
+          </div>
+    
+          <div class="role role-parent">
+            <img src="parent.jpg" alt="Parent">
+            <h4>I’m parent</h4>
+            <a class="small-cta" href="log in parent.html">SIGN IN</a>
+          </div>
+        </section>
+    
+      </main>
+    
+      <!-- FOOTER -->
+      <footer class="site-footer">
+        <ul class="footer-links">
+          <li><a href="#">Conditions of Use</a></li>
+          <li><a href="#">Privacy Notice</a></li>
+          <li><a href="#">Consumer Health Data Privacy Disclosure</a></li>
+          <li><a href="#">Your Ads Privacy Choices</a></li>
+        </ul>
+      </footer>
+    
+</body>
+</html>

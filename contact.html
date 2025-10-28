@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Navigation Bar</title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    function toggleSidebar() {
+      const sidebar = document.getElementById("sidebarRight");
+      if (sidebar.style.width === "250px") {
+        sidebar.style.width = "0";
+      } else {
+        sidebar.style.width = "250px";
+      }
+    }
+    
+    function closeSidebar() {
+      document.getElementById("sidebarRight").style.width = "0";
+    }
+    </script>
+    
+</head>
+<body>
+  <div class="logo-and-title">
+    <div class="logo">
+        <img src="logo.jpg" alt="Logo"> </div>
+    <span class="site-title">Lesperance school</span>
+</div>
+<nav class="navbar">
+        <ul class="nav-links">
+          <li><a href="home.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      
+        <div class="search-sidebar-container">
+          <input type="text" placeholder="Search...">
+          <button>🔍</button>
+          <div class="sidebar-icon" onclick="toggleSidebar()">☰</div>
+        </div>
+      </nav>
+      
+      <!-- Right Sidebar -->
+      <div class="sidebar-right" id="sidebarRight">
+        <button class="close-btn" onclick="closeSidebar()">×</button>
+        <a href="sport.html">Sport</a>
+        <a href="science.html">Science</a>
+        <a href="art.html">Art</a>
+      </div>
